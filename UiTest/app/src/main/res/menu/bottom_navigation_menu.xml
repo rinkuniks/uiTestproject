@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:menuCategory="secondary"
+        android:title="Activity"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/insight_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_graphic_eq_24"
+        android:menuCategory="secondary"
+        android:title="Insights"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/portfolio_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_sports_volleyball_24"
+        android:menuCategory="secondary"
+        android:title="Portfolio"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/account_tab"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:menuCategory="secondary"
+        android:title="Account"
+        app:showAsAction="never" />
+</menu>

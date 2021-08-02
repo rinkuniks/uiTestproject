@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content">
+
+  <ImageView
+    android:id="@+id/image_view_brand_logo"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_baseline_face_24"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/middle_layout"
+    app:layout_constraintHorizontal_bias="0.1"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/middle_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/final_layout"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toEndOf="@+id/image_view_brand_logo"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/tv_brand_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Investment Option"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/tv_mode"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Sell"
+      android:drawablePadding="8dp"
+      android:gravity="center"
+      android:textColor="#DCDCDC"
+      android:drawableStart="@drawable/ic_baseline_addchart_24"
+      app:layout_constraintTop_toBottomOf="@+id/tv_brand_name"
+      app:layout_constraintStart_toStartOf="parent"/>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/final_layout"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.4"
+    app:layout_constraintStart_toEndOf="@+id/middle_layout"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/tv_amount"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="+W4715"
+      android:gravity="end"
+      android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+      android:id="@+id/tv_amount_time"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="9:47 pm"
+      android:textColor="#DCDCDC"
+      android:gravity="end"
+      android:textAppearance="@style/TextAppearance.AppCompat.Small"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tv_amount" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/final_layout"
+    android:background="#DCDCDC"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

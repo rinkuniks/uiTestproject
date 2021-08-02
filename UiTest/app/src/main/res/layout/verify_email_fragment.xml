@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/tv_logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/alphametrica"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.15" />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/text_forgotPassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="A code has been sent to your email"
+    android:textStyle="bold"
+    android:ems="12"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3" />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/tv_code_sent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="The code has been sent to "
+    app:layout_constraintHorizontal_chainStyle="packed"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/tv_email"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.4" />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/tv_email"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="abcd@gmail.com"
+    android:layout_marginStart="5dp"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/tv_code_sent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.4" />
+
+  <com.google.android.material.textview.MaterialTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Please enter the code below"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.44" />
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/et_userName_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.6">
+
+    <EditText
+      android:id="@+id/et_otp1"
+      style="@style/otp_editText"
+      android:text=""
+      app:layout_constraintEnd_toStartOf="@+id/et_otp2"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_otp2"
+      style="@style/otp_editText"
+      android:layout_toEndOf="@+id/et_otp1"
+      android:text=""
+      app:layout_constraintEnd_toStartOf="@+id/et_otp3"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/et_otp1"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_otp3"
+      style="@style/otp_editText"
+      android:text=""
+      app:layout_constraintEnd_toStartOf="@+id/et_otp4"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/et_otp2"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_otp4"
+      style="@style/otp_editText"
+      android:text=""
+      app:layout_constraintEnd_toStartOf="@+id/et_otp5"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/et_otp3"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_otp5"
+      style="@style/otp_editText"
+      android:text=""
+      app:layout_constraintEnd_toStartOf="@+id/et_otp6"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/et_otp4"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+      android:id="@+id/et_otp6"
+      style="@style/otp_editText"
+      android:text=""
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/et_otp5"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/resend_code"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Resend Code again"
+    android:textColor="#301934"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.65"/>
+
+
+  <com.google.android.material.textview.MaterialTextView
+    android:id="@+id/btn_verify"
+    style="@style/button"
+    android:text="Verify"
+    app:layout_constraintVertical_bias="0.9"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
